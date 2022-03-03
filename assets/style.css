@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+ }
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
+}
+
+/* headings and logo */
+
+h1, h2 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+    }
+
+#logo {
+    position: relative;
+    font-size: 280%;
+    margin-left: 30px;
+    text-align: center;
+}
+
+/* navigation links */
+
+#menu {
+    font-size: 125%;
+    letter-spacing: 2px;
+    margin-right: 350px;
+}
+
+#menu, #logo {
+    line-height: 100px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 75px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 2px solid #3a3a3a;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* hero image and cover text */
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+}
+
+#join {
+    text-align: center;
+    line-height: 80px;
+}
+#cover-text, #cover-text h2 {
+    color: whitesmoke;
+    text-align: center;
+    position: absolute;
+   }
+
+#hero-image {
+    height: 650px;
+    width: 100%;
+    background: url(../css/images/new-hero.jfif) no-repeat center center;
+
+    /* animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* creates the level of zoom for hero image */
+@keyframes hero-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+#cover-text {
+    font-size: 125%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 300px;
+    height: 200px;
+    padding-left: 20px;
+    padding-top: 100px;
+    background-color: rgba(113, 18, 238, 50);
+    bottom: 30px;
+    right: 150px;
+    position: absolute;
+    border-radius: 50%;
+    line-height: 90px;
+}
+
+#intro {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 180%;
+    letter-spacing: 2px;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    }
+
+#new-page-intro {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+    margin: 20px;
+    font-size: 280%;
+    text-align: center;
+}
+
+#furry-fun {
+    background-image: url('../css/images/furry-fun.jfif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 45%;
+    width: 100%;
+    overflow: hidden;
+    text-align: left;
+    font-size: 55px;
+    padding-left: 85px;
+    padding-top: 225px;
+    text-decoration-color: whitesmoke
+    
+  }
+
+.main-sections {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    width: 20%;
+    height: 600px;
+    float: left;
+    padding: 30px 0 0 10px;
+    text-align: center;
+    border: 2px solid white;
+    box-sizing: border-box;
+    font-size: 55px;
+    font-weight: bold;
+    }      
+
+#new-cockaparents {
+    background-image: url('../css/images/new-new-cockaparents.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    overflow: hidden;
+    float: left;
+    color: rgb(113, 18, 238);
+}
+
+.new-cockaparents-text {
+    font-family: Lato, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+   }
+
+#keep-your-poo-healthy {
+    background-image: url('../css/images/healthy-boy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    overflow: hidden;
+}
+
+.keep-your-poo-healthy-text {
+    font-family: Lato, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+   }
+
+#join-cockapoo-club {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+    margin: 20px;
+    font-size: 180%;
+    text-align: center;
+}
+
+#clubhouse-map {
+    display: inline-block;
+    position: relative;
+    padding: 25px 0 25px 35%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+    text-align: center;
+}
+
+.mapouter {
+    text-align: center;
+    height: 600px;
+    width: 600px;
+}
+
+/* footer */
+
+footer {
+    height: 150px;
+}
+
+.social-networks {
+    text-align: center;
+    font-size: larger;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: rgb(113, 18, 238);
+}
+
+p#join-text {
+    color: #fafafa;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#join-text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    }
+
+#furry-fun-fotos-join {
+    margin-bottom: 25px;
+}
+
+.form-section {
+    clear: left;
+    background-image: url("../css/images/benji-couch2.jfif");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+   }
+
+.choose {
+        line-height: 2;
+        font-size: large;
+ }
+
+.signup-form {
+    margin: 50px 0 30% 28%;
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    padding: 30px;
+    text-align: center;
+}
+
+#simply {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+p#simply {
+    font-size: 25px;
+    padding: 30px;
+    margin: 0;
+}
+
+.signup-form > h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+.text-input:hover {
+    border-color: rgb(113, 18, 238);
+}
+
+.join-button {
+    margin-top: 20px;
+    margin-left: 55px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 150%;
+    background-color: rgb(113, 18, 238);
+    color: #fafafa;
+    display: block;
+}
+
+.join-button:hover {
+    background-color: #fafafa;
+    color: rgb(113, 18, 238);
+}
+
+::placeholder {
+color: rgb(113, 18, 238);;
+text-align: center;
+}
+
+.signup-form label {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#fun-fotos {
+        clear: both;
+        line-height: 0;
+        column-count: 3;
+        column-gap: 0;
+    }
+    
+#fun-fotos > img {
+        width: 100%;
+}
+
+    @media screen and (max-width: 1200px) {
+        #club-ethos {
+            width: 65%;
+            height: 1200px;
+            margin: 0 auto;
+        }
+    }
